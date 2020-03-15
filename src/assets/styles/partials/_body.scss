@@ -1,7 +1,16 @@
+html {
+  font-size: 62.5%;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   padding: 0;
   margin: 0;
-  height: 100%;
-  background-color: var(--color-primary);
+  font-size: 1.6rem;
+  background-color: var(--blue-dark);
   font-family: 'Bellota', cursive;
+  color: var(--grey-soft);
+  text-align: center;
 }

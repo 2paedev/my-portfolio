@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.vue renders the same HTML 1`] = `
+<div
+  class="app"
+>
+  <section
+    class="app__block"
+    data-aos="zoom-out"
+    data-aos-delay="100"
+    data-aos-duration="3000"
+  >
+    <personal-info-stub />
+  </section>
+   
+  <section
+    class="app__block"
+    data-aos="fade-right"
+    data-aos-delay="150"
+    data-aos-duration="1000"
+    data-aos-offset="500"
+  >
+    <skills-stub />
+  </section>
+   
+  <section
+    class="app__block"
+    data-aos="flip-left"
+    data-aos-delay="100"
+    data-aos-duration="2500"
+    data-aos-offset="350"
+  >
+    <projects-stub />
+  </section>
+   
+  <section
+    class="app__block"
+    data-aos="slide-up"
+    data-aos-delay="100"
+    data-aos-duration="1000"
+    data-aos-offset="300"
+  >
+    <hobbies-stub />
+  </section>
+</div>
+`;

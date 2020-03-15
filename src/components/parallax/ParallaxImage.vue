@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import ParallaxElement from './ParallaxElement.vue'
+import ParallaxElement from './ParallaxElement.vue';
 export default {
   name: `ParallaxImage`,
   components: {
@@ -43,11 +43,11 @@ export default {
   data() {
     return {
       innerHeight: 0
-    }
+    };
   },
   computed: {
     aspectRatio() {
-      return this.height / this.width
+      return this.height / this.width;
     },
     compensatedFactor() {
       // Because the parallax effect is relative
@@ -55,7 +55,7 @@ export default {
       // shrink the containers height by the given
       // factor, we have to compensate this by
       // increasing the factor.
-      return this.factor * 2
+      return this.factor * 2;
     },
     compensatedHeight() {
       // We want the image to scroll inside of a
@@ -64,23 +64,23 @@ export default {
       // container must be shrinked by the given
       // factor to make sure we don't have any
       // whitespace when scrolling.
-      return this.innerHeight - this.innerHeight * this.factor
+      return this.innerHeight - this.innerHeight * this.factor;
     }
   },
   mounted() {
-    this.setInnerHeight()
-    const eventHandler = () => requestAnimationFrame(this.setInnerHeight)
-    window.addEventListener(`resize`, eventHandler)
+    this.setInnerHeight();
+    const eventHandler = () => requestAnimationFrame(this.setInnerHeight);
+    window.addEventListener(`resize`, eventHandler);
     this.$on(`hook:destroyed`, () => {
-      window.removeEventListener(`resize`, eventHandler)
-    })
+      window.removeEventListener(`resize`, eventHandler);
+    });
   },
   methods: {
     setInnerHeight() {
-      this.innerHeight = this.$refs.inside.getBoundingClientRect().height
+      this.innerHeight = this.$refs.inside.getBoundingClientRect().height;
     }
   }
-}
+};
 </script>
 
 <style lang="scss">

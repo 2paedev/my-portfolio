@@ -21,13 +21,13 @@ export default {
   },
   computed: {
     offset() {
-      const { height, scrollFactor } = this.parallaxContainer
+      const { height, scrollFactor } = this.parallaxContainer;
       // The offset is relative to the height of
       // the element. This means, if the factor is
       // 0.5, the element is moved half its height
       // over the full scroll distance of the viewport.
-      return scrollFactor * height * this.factor
+      return scrollFactor * height * this.factor;
     }
   }
-}
+};
 </script>

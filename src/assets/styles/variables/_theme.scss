@@ -1,13 +1,21 @@
 :root {
-  --color-primary: var(--blue-refreshing-1);
-  --color-primary-tint: var(--blue-refreshing-2);
-  --color-secondary: var(--blue-refreshing-5);
-  --color-secondary-tint: var(--blue-refreshing-4);
-  --color-terciary: var(--blue-refreshing-3);
+  --blue-dark: var(--blue-refreshing-1);
+  --blue-dark-tint: var(--blue-refreshing-2);
+  --blue-soft: var(--blue-refreshing-5);
+  --blue-soft-tint: var(--blue-refreshing-4);
+  --grey-soft: var(--blue-refreshing-3);
+  --green-soft: var(--blue-refreshing-6);
+  --green-soft-tint: var(--blue-refreshing-7);
+  --pink-soft: var(--blue-refreshing-8);
+  --pink-soft-tint: var(--blue-refreshing-9);
 
-  --blue-refreshing-1: #25274D;
+  --blue-refreshing-1: #25274d;
   --blue-refreshing-2: #464866;
-  --blue-refreshing-3: #AAABB8;
-  --blue-refreshing-4: #2E9CCA;
-  --blue-refreshing-5: #29648A;
+  --blue-refreshing-3: #aaabb8;
+  --blue-refreshing-4: #2e9cca;
+  --blue-refreshing-5: #29648a;
+  --blue-refreshing-6: #2b7a78;
+  --blue-refreshing-7: #3aafa9;
+  --blue-refreshing-8: #9a1750;
+  --blue-refreshing-9: #e3afbc;
 }

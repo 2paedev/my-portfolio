@@ -1,205 +1,65 @@
 <template>
   <div class="app">
-    <section class="App__example" data-aos="zoom-out" data-aos-delay="100" data-aos-duration="3000">
-      <h2>Single element</h2>
-
-      <ParallaxContainer class="App__example-single-element">
-        <ParallaxElement :factor="0.25" class="App__example-element">
-          <h2>MMLorem Ipsum</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-          </p>
-        </ParallaxElement>
-      </ParallaxContainer>
-      <h2>Single element</h2>
-
-      <ParallaxContainer class="App__example-single-element">
-        <ParallaxElement :factor="0.25" class="App__example-element">
-          <h2>Lorem Ipsum</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-          </p>
-        </ParallaxElement>
-      </ParallaxContainer>
-      <h2>Single element</h2>
-
-      <ParallaxContainer class="App__example-single-element">
-        <ParallaxElement :factor="0.25" class="App__example-element">
-          <h2>Lorem Ipsum</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-          </p>
-        </ParallaxElement>
-      </ParallaxContainer>
+    <section class="app__block--no-margin">
+      <personal-info></personal-info>
     </section>
 
     <section
-      class="App__example"
+      class="app__block"
       data-aos="fade-right"
-      data-aos-offset="500"
+      data-aos-offset="200"
       data-aos-delay="150"
-      data-aos-duration="1000"
+      data-aos-duration="1300"
     >
-      <h2>Multiple elements</h2>
-
-      <ParallaxContainer class="App__example-double-element">
-        <ParallaxElement :factor="0.25" class="App__example-element">
-          <h2>Lorem Ipsum</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-          </p>
-        </ParallaxElement>
-        <ParallaxElement :factor="0.5" class="App__example-element">
-          <h2>Sadipscing Ipsum</h2>
-          <p>
-            Sadipscing ipsum dolor sit amet, consetetur lorem elitr.
-          </p>
-        </ParallaxElement>
-      </ParallaxContainer>
-      <h2>Multiple elements</h2>
-
-      <ParallaxContainer class="App__example-double-element">
-        <ParallaxElement :factor="0.25" class="App__example-element">
-          <h2>Lorem Ipsum</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-          </p>
-        </ParallaxElement>
-        <ParallaxElement :factor="0.5" class="App__example-element">
-          <h2>Sadipscing Ipsum</h2>
-          <p>
-            Sadipscing ipsum dolor sit amet, consetetur lorem elitr.
-          </p>
-        </ParallaxElement>
-      </ParallaxContainer>
+      <skills></skills>
     </section>
 
     <section
-      class="App__example"
-      data-aos="flip-left"
-      data-aos-offset="350"
-      data-aos-delay="100"
-      data-aos-duration="2500"
+      class="app__block"
+      data-aos="fade-left"
+      data-aos-offset="200"
+      data-aos-delay="150"
+      data-aos-duration="1300"
     >
-      <h2>Image element</h2>
-
-      <ParallaxContainer>
-        <ParallaxImage :width="432" :height="289" :factor="0.5">
-          <img
-            src="https://images.unsplash.com/photo-1516750930166-ed88ab1adb61?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=65c8f6fcafaf68f5fa434b5f076780fd&auto=format&fit=crop&w432&h=289&q=80"
-            alt="Road that leads to a mountain"
-          />
-        </ParallaxImage>
-      </ParallaxContainer>
+      <projects></projects>
     </section>
 
     <section
-      class="App__example"
+      class="app__block"
       data-aos="slide-up"
-      data-aos-offset="800"
-      data-aos-delay="50"
+      data-aos-offset="300"
+      data-aos-delay="100"
       data-aos-duration="1000"
     >
-      <h2>Just for scrolling</h2>
-
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-        takimata sanctus est Lorem ipsum dolor sit amet.
-      </p>
-      <p>
-        Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-        dolor sit amet.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-        takimata sanctus est Lorem ipsum dolor sit amet.
-      </p>
-      <p>
-        Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-        dolor sit amet.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-        takimata sanctus est Lorem ipsum dolor sit amet.
-      </p>
-      <p>
-        Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-        dolor sit amet.
-      </p>
+      <hobbies></hobbies>
     </section>
   </div>
 </template>
 
 <script>
-import ParallaxContainer from './components/parallax/ParallaxContainer.vue'
-import ParallaxElement from './components/parallax/ParallaxElement.vue'
-import ParallaxImage from './components/parallax/ParallaxImage.vue'
+import PersonalInfo from './components/PersonalInfo.vue';
+import Skills from './components/Skills.vue';
+import Projects from './components/Projects.vue';
+import Hobbies from './components/Hobbies.vue';
+
 export default {
   name: `App`,
   components: {
-    ParallaxContainer,
-    ParallaxElement,
-    ParallaxImage
+    PersonalInfo,
+    Skills,
+    Projects,
+    Hobbies
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-img {
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-}
-
 .app {
-  text-align: center;
-  color: #2c3e50;
-  padding: 150px 0;
-  h1 {
-    text-align: center;
+  &__block {
+    margin: 15rem;
+    &--no-margin {
+      margin: 0;
+    }
   }
-}
-.App__example {
-  padding: 100px;
-  margin: 50px;
-  margin-bottom: 300px;
-  border-radius: 0.25em;
-  box-shadow: 0 0.35em 1em rgba(#000, 0.2);
-}
-.App__example-single-element {
-  height: 20em;
-  background-color: lightblue;
-}
-.App__example-double-element {
-  display: flex;
-  height: 20em;
-  background-color: lightgreen;
-}
-.App__example-element {
-  padding: 1em;
-  max-width: 12em;
 }
 </style>
